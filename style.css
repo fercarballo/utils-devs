@@ -1,0 +1,269 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(26, 26, 26);
+}
+h1 {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+h3,
+a {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+h3 {
+  text-align: center;
+  margin: 1em;
+  font-size: 2rem;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+img {
+  max-width: 5rem;
+}
+.listado {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 27px;
+  grid-row-gap: 0;
+}
+.side ul li {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 0.3em;
+  display: flex;
+  margin-top: 1.3em;
+  background-color: rgb(75, 74, 74);
+  border-radius: 16px;
+  box-shadow: -2px 0 19px -3px rgba(87, 87, 87, 0.83);
+  -webkit-box-shadow: -2px 0 19px -3px rgba(87, 87, 87, 0.83);
+  -moz-box-shadow: -2px 0 19px -3px rgba(87, 87, 87, 0.83);
+}
+.side ul li a {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  place-self: center;
+  font-weight: 300;
+}
+.godevs-container {
+  justify-self: center;
+}
+.godevs {
+  margin-top: 4rem;
+  max-width: 35rem;
+}
+.header-section {
+  display: flex;
+  padding: 2em 0;
+  margin: 1em;
+  justify-content: center;
+}
+.header-section h3 {
+  margin: 0.8rem;
+  text-align: left;
+}
+footer {
+  text-align: center;
+  margin: 0 auto;
+  columns: #fff;
+  text-decoration: none;
+}
+footer a {
+  text-decoration: none;
+}
+footer div {
+  background-image: url(./img/Vector.png);
+  width: 95px;
+  height: 95px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .listado {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 0;
+  }
+  .header-section img {
+    width: 5rem;
+  }
+  .side ul li img {
+    width: 3em;
+  }
+  .side ul li {
+    font-size: 21px;
+    width: 90%;
+    margin: 0.8em auto;
+  }
+  .godevs-container {
+    justify-self: center;
+  }
+  .godevs {
+    margin-top: 4rem;
+    max-width: 28rem;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  h3 {
+    font-size: 38px;
+  }
+  .godevs-container {
+    display: flex;
+  }
+  .godevs {
+    margin-top: 2rem;
+    max-width: 28rem;
+    margin: 0 auto;
+  }
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
+  .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .listado {
+    display: flex;
+    flex-direction: column;
+  }
+  .side ul li {
+    width: 70vw;
+    margin-top: 1.3em;
+    justify-content: center;
+  }
+  .side ul li a {
+    width: 60%;
+    font-size: 28px;
+  }
+  .header-section {
+    margin: 0.5em;
+    padding-top: 4em;
+  }
+  .side ul li img {
+    width: 8em;
+  }
+  h3 {
+    margin: 0.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .side ul li {
+    width: 80vw;
+  }
+  .side ul li a {
+    width: 70%;
+    font-size: 2rem;
+    line-height: 1.6em;
+  }
+  .header-section {
+    font-size: 26px;
+    margin: 0.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+  }
+  .side ul li img {
+    width: 8em;
+  }
+  h3 {
+    margin: 0.2rem;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .side .header-section h3 {
+    font-size: 1.8rem;
+  }
+  .side .header-section img {
+    width: 4rem;
+  }
+  .side ul li a {
+    width: 80%;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+  }
+  .header-section {
+    font-size: 26px;
+    margin: 0.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+  }
+  .side ul li img {
+    width: 8em;
+  }
+  h3 {
+    margin: 0.2rem;
+  }
+}
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .side .header-section h3 {
+    font-size: 1.2rem;
+  }
+  .side .header-section img {
+    width: 2rem;
+  }
+  .side ul li {
+    width: 90%;
+  }
+  .side ul li a {
+    width: 85%;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+  }
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+    width: 85%;
+  }
+  .side {
+    width: 80%;
+  }
+  .side .header-section h3 {
+    font-size: 1.4rem;
+  }
+  .side .header-section img {
+    width: 3rem;
+  }
+  .side ul li {
+    width: 90%;
+  }
+  .side ul li a {
+    width: 85%;
+    font-size: 1.3rem;
+    line-height: 1.4em;
+  }
+}
