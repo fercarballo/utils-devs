@@ -40,20 +40,20 @@ a {
 .side .listado {
   display: flex;
   flex-direction: column;
-  width: 90vw;
   justify-content: center;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: 1rem;
+  width: 90vw;
 }
 .side .listado li {
   border-radius: 1.3rem;
-}
+  margin: 1rem;
 
-.side ul li {
   list-style-type: none;
   font-size: 20px;
   padding: 0.3em;
   display: flex;
+  margin: 0;
   margin-top: 1em;
   background-color: rgb(75, 74, 74);
   border-radius: 1em;
@@ -62,11 +62,25 @@ a {
   -moz-box-shadow: -2px 0 19px -3px rgba(87, 87, 87, 0.83);
 }
 
+.side .listado li:hover {
+  background-color: rgb(20, 20, 20);
+  transition: all 0.35s ease-out;
+}
+
 .side ul li a {
   font-size: 1.2rem;
   line-height: 1.4em;
   place-self: center;
   font-weight: 300;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.side ul li a:hover {
+  color: rgb(238, 235, 76);
 }
 
 .side .header-section {
@@ -131,7 +145,6 @@ footer div {
     width: 4rem;
   }
   .side ul li a {
-    width: 80%;
     font-size: 1.4rem;
     line-height: 1.5em;
   }
@@ -156,16 +169,16 @@ footer div {
   .side .header-section h3 {
     font-size: 4rem;
   }
-  .side ul li {
-    margin-bottom: 0.9rem;
+  .side .listado li {
+    margin-bottom: 1.5rem;
   }
   .side ul li a {
-    font-size: 2.4rem;
-    line-height: 1.5em;
-    text-align: center;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: left;
   }
   .side ul li img {
-    max-width: 8em;
+    width: 6rem;
   }
 
   div .godevs-container .godevs {
@@ -174,6 +187,7 @@ footer div {
 }
 
 @media (min-width: 1024px) {
+
   h1 {
     font-size: 5.5rem;
   }
@@ -189,7 +203,7 @@ footer div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0.3rem 0.3rem;
+    gap: 0rem 2rem;
     grid-template-areas: ". .";
   }
   .header-section h3 {
@@ -201,12 +215,9 @@ footer div {
   .side ul li img {
     width: 4em;
   }
-  .side ul li {
-    width: 95%;
-  }
   .side ul li a {
-    font-size: 1.5rem;
-    text-align: left;
+    font-size: 1.6rem;
+    line-height: 3rem;
   }
   .godevs-container {
     justify-self: center;
